@@ -8,10 +8,10 @@ begin
   Jeweler::Tasks.new do |s|
     s.name = "random-org"
     s.summary = %Q{TODO}
-    s.email = "mike.is.green@gmail.com"
-    s.homepage = "http://github.com/mikedamage/random-org"
+    s.email = "darnikian@gmail.com"
+    s.homepage = "http://github.com/deahdflaw/random-org"
     s.description = "TODO"
-    s.authors = ["Mike Green"]
+    s.authors = ["Deah D Flaw"]
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"

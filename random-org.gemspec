@@ -2,16 +2,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{random-org}
-  s.version = "0.1.1"
-
+  s.version = "0.2.0"
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Mike Green"]
-  s.date = %q{2009-01-28}
-  s.description = %q{Gets random integers from Random.org's random integer generator via HTTP.}
-  s.email = %q{mike.is.green@gmail.com}
+  s.authors = ["Deah D Flaw"]
+  s.date = %q{2011-05-16}
+  s.description = %q{Gets random integers and strings from Random.org's random integer generator via HTTP.}
+  s.email = %q{darnikian@gmail.com}
   s.files = ["README.textile", "VERSION.yml", "lib/random_org.rb", "test/random_org_test.rb", "test/test_helper.rb"]
   s.has_rdoc = true
-  s.homepage = %q{http://github.com/mikedamage/random-org}
+  s.homepage = %q{http://github.com/deahdflaw/random-org}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.1}
