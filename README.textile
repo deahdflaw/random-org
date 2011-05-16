@@ -15,46 +15,42 @@ h2. Usage
 
 Usage is simple:
 
-bc. require 'random_org'
+pre. require 'random_org'
+		
+	#Integers
 	
+	int = RandomOrg::Integer.new(0, 100)
+	puts int.value 
+	#Generate array with one element: random decimal integer in the range 1..100
+	#Defaults: base = 10, nums = 1
 	
-bc.	#Integers
+	int = RandomOrg::Integer.new(0, 32, 16, 200)
+	puts int.value 
+	#Generate array with 200 elements: random string hexadecimal in the range 1..32
+		
+	#Strings
 	
-bc.	int = RandomOrg::Integer.new(0, 100)
-bc.	puts int.value 
-bc.	#Generate array with one element: random decimal integer in the range 1..100
-bc.	#Defaults: base = 10, nums = 1
+	str = RandomOrg::String.new(10)
+	puts str.value
+	#Generate array with one string length 10 symbols containing digits, uppercase and lowercase, not necessarily unique.
+	#Defaults: num = 1, dig = true, upper = true, lower = true, uniq = false
 	
-bc.	int = RandomOrg::Integer.new(0, 32, 16, 200)
-bc.	puts int.value 
-bc.	#Generate array with 200 elements: random string hexadecimal in the range 1..32
+	str = RandomOrg::String.new(12, 3, false, true, false, true)
+	puts str.value
+	#Generate array with 3 string length 12 symbols containing only lowercase, totally unique.
+		
+	#Sequences
 	
+	seq = RandomOrg::String.new()
+	puts seq.value
+	#Generate array with 100 integers at random from 1 to 100
+	#Defaults: min = 1, max = 100
+		
+	#Quota check
 	
-bc.	#Strings
-	
-bc.	str = RandomOrg::String.new(10)
-bc.	puts str.value
-bc.	#Generate array with one string length 10 symbols containing digits, uppercase and lowercase, not necessarily unique.
-bc.	#Defaults: num = 1, dig = true, upper = true, lower = true, uniq = false
-	
-bc.	str = RandomOrg::String.new(12, 3, false, true, false, true)
-bc.	puts str.value
-bc.	#Generate array with 3 string length 12 symbols containing only lowercase, totally unique.
-	
-	
-bc.	#Sequences
-	
-bc.	seq = RandomOrg::String.new()
-bc.	puts seq.value
-bc.	#Generate array with 100 integers at random from 1 to 100
-bc.	#Defaults: min = 1, max = 100
-	
-	
-bc.	#Quota check
-	
-bc.	quo = RandomOrg::Quota(new)
-bc.	puts quo.value
-bc.	#No parameters, return only integer with current quota.
+	quo = RandomOrg::Quota(new)
+	puts quo.value
+	#No parameters, return only integer with current quota.
 
 h2. Dependencies
 
