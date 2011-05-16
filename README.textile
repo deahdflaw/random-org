@@ -2,12 +2,10 @@ h1. Random.org Gem
 
 _Random integers, baked fresh daily._
 
-by Mike Green
+This software based on Random.Org by Mike Green
 
 
 h2. Summary
-
-This is my first attempt at creating a Ruby gem. It's a really simple class that uses "Random.org's":http://random.org key-value interface to generate a user-specified number of random integers. It's mostly just so I can teach myself basic gem development, but I can see it being useful in web applications that need a reliable, _true_ random number generator.
 
 The Random.org Gem is a module that currently contains only one class: @RandomOrg::Integer@, which is an interface to Random.org's "random integer generator":http://random.org/integers/ service. Eventually it will also contain a class that generates sequences of random integers, corresponding to Random.org's "sequence generator":http://random.org/sequences/. Obviously, the Random.org Gem requires an active internet connection to work.
 
@@ -18,8 +16,8 @@ Usage is pretty straightforward -- the only method is @new(min, max, base)@, whe
 <pre>
 	require 'random_org'
 	
-	int = RandomOrg::Integer.new(0, 100) # base defaults to 10
-	puts int.value # That's your randomly generated integer.
+	int = RandomOrg::Integer.new(0, 100) # base defaults to 10, num defaults to 1 (max 1000)
+	puts int.value # That's array with your randomly generated integer(s).
 </pre>
 
 h2. Dependencies
@@ -35,4 +33,4 @@ _From their website:_
 
 h2. COPYRIGHT
 
-Copyright (c) 2008 Mike Green. See LICENSE for details.
+Copyright (c) 20011 Deah D Flaw. See LICENSE for details.
