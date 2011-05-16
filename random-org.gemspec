@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{random-org}
-  s.version = "0.1.2"
+  s.version = "0.2.0"
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Deah D Flaw"]
   s.date = %q{2011-05-16}
-  s.description = %q{Gets random integers and strings from Random.org's random integer generator via HTTP.}
+  s.description = %q{Gets array of random integers, strings, sequences and quota check from Random.org's random integer generator via HTTP.}
   s.email = %q{darnikian@gmail.com}
   s.files = ["README.textile", "VERSION.yml", "lib/random_org.rb", "test/random_org_test.rb", "test/test_helper.rb"]
   s.has_rdoc = true
