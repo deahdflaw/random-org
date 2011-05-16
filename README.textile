@@ -15,8 +15,7 @@ h2. Usage
 
 Usage is simple:
 
-pre.
-	require 'random_org'
+bc. require 'random_org'
 	
 	
 	#Integers
@@ -56,7 +55,6 @@ pre.
 	quo = RandomOrg::Quota(new)
 	puts quo.value
 	#No parameters, return only integer with current quota.
-pre.
 
 h2. Dependencies
 
